@@ -27,6 +27,7 @@
   import { err, goto } from "$lib/utils";
   import { password, user, token } from "$lib/store";
   import { query } from "$lib/api";
+  import branding from "$lib/branding";
 
   export let artwork;
 
@@ -65,7 +66,7 @@
           <div>Back</div>
         </div>
       </a>
-    <h2>Edit property</h2>
+    <h2>Edit {branding.nftItemName}</h2>
       <Form bind:artwork title={artwork.title} on:submit={update} />
   </div>
 </div>

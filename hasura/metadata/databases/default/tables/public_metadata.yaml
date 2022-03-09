@@ -13,97 +13,45 @@ insert_permissions:
         artist_id:
           _eq: X-Hasura-User-Id
     columns:
-    - amenities_nearby
-    - annual_taxes
-    - appliances_number
-    - appliences_included
     - artwork_id
-    - bathroom_number
-    - bedroom_number
-    - building_type
-    - built_in
     - created_at
-    - fire_protection
-    - floor_space
-    - ft_space_size_unit
     - id
-    - maintenance_fee_monthly
-    - property_address
-    - property_title
+    - test_number
+    - test_text
     - updated_at
-    - window_coverings
   role: user
 select_permissions:
 - permission:
     columns:
-    - amenities_nearby
-    - annual_taxes
-    - appliances_number
-    - appliences_included
     - artwork_id
-    - bathroom_number
-    - bedroom_number
-    - building_type
-    - built_in
     - created_at
-    - fire_protection
-    - floor_space
-    - ft_space_size_unit
     - id
-    - maintenance_fee_monthly
-    - property_address
-    - property_title
+    - test_number
+    - test_text
     - updated_at
-    - window_coverings
     filter: {}
   role: anonymous
 - permission:
     allow_aggregations: true
     columns:
-    - amenities_nearby
-    - annual_taxes
-    - appliances_number
-    - appliences_included
     - artwork_id
-    - bathroom_number
-    - bedroom_number
-    - building_type
-    - built_in
     - created_at
-    - fire_protection
-    - floor_space
-    - ft_space_size_unit
     - id
-    - maintenance_fee_monthly
-    - property_address
-    - property_title
+    - test_number
+    - test_text
     - updated_at
-    - window_coverings
     filter: {}
   role: user
 update_permissions:
 - permission:
     check: null
     columns:
-    - amenities_nearby
-    - annual_taxes
-    - appliances_number
-    - appliences_included
     - artwork_id
-    - bathroom_number
-    - bedroom_number
-    - building_type
-    - built_in
     - created_at
-    - fire_protection
-    - floor_space
-    - ft_space_size_unit
     - id
-    - maintenance_fee_monthly
-    - property_address
-    - property_title
+    - test_number
+    - test_text
     - updated_at
-    - window_coverings
     filter:
       artwork:
         owner_id:

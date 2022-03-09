@@ -2,7 +2,7 @@
 
 LNFT is a web-based platform for issuing and transacting with non-fungible tokens on the [Bitcoin Liquid Network](https://blockstream.com/liquid/).
 
-The plan is to separate out any DigiDeeds-specific features from the core platform functionality so that anyone can adapt the platform to host their own Liquid-based NFT site but that's currently a work in progress
+The plan is to separate out any specific features from the core platform functionality so that anyone can adapt the platform to host their own Liquid-based NFT site but that's currently a work in progress
 
 ## Features
 

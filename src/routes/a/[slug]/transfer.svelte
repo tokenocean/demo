@@ -33,6 +33,7 @@
     sign,
   } from "$lib/wallet";
   import { requirePassword } from "$lib/auth";
+  import branding from "$lib/branding";
 
   export let artwork;
 
@@ -83,7 +84,7 @@
         id: artwork.id,
       }).catch(err);
 
-      info(`Property sent to ${recipient.username}!`);
+      info(`${branding.nftItemName} sent to ${recipient.username}!`);
       goto(`/a/${artwork.slug}`);
     } catch (e) {
       err(e);
@@ -106,7 +107,7 @@
 
 {#if $addresses}
 <div class="container mx-auto sm:justify-between mt-10 md:mt-20">
-  <h2 class="mb-4">Transfer Property</h2>
+  <h2 class="mb-4">Transfer {branding.projectName}</h2>
 
   {#if loading}
     <ProgressLinear />

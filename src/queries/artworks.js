@@ -191,20 +191,8 @@ export const getArtworkBySlug = `query($slug: String!) {
     },
     num_favorites,
     metadata {
-      maintenance_fee_monthly
-      built_in
-      property_address
-      bedroom_number
-      bathroom_number
-      property_title
-      building_type
-      annual_taxes
-      appliences_included
-      window_coverings
-      floor_space
-      ft_space_size_unit
-      fire_protection
-      amenities_nearby
+      test_text
+      test_number
     }
   }
 }`;
@@ -290,21 +278,8 @@ export const getArtwork = `query($id: uuid!) {
       }
     }
     metadata {
-      maintenance_fee_monthly
-      built_in
-      property_address
-      bedroom_number
-      bathroom_number
-      property_title
-      building_type
-      annual_taxes
-      appliences_included
-      appliances_number
-      window_coverings
-      floor_space
-      ft_space_size_unit
-      fire_protection
-      amenities_nearby
+      test_text
+      test_number
     }
   }
 }`;

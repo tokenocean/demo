@@ -15,7 +15,7 @@ RUN NODE_ENV=development pnpm i
 COPY . .
 
 RUN chmod +x create-config.sh
-RUN ./create-config.sh -c lPisyETZDe4KFXulqf0S
+RUN ./create-config.sh -c adLXnY0tVUN9pDsPmrDZ
 
 RUN NODE_ENV=development pnpm i --unsafe-perm
 RUN pnpm build

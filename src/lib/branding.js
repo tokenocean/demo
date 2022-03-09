@@ -17,7 +17,7 @@ const defaultBranding = {
 
   meta: {
     title: "Default",
-    keywords: "Bitcoin Liquid NFT Real Estate",
+    keywords: "Bitcoin Liquid NFT",
     description: "Digital assets on the bitcoin liquid network.",
     image: "https://default.io/splash.png",
     url: "https://default.io/",
@@ -36,7 +36,7 @@ const defaultBranding = {
 const brandingByConfig = {
   ...defaultBranding,
   ...config,
-  ...{ nftItemName: "property", nftItemNamePlural: "properties" },
+  ...{ nftItemName: "demo item", nftItemNamePlural: "demo items" },
 };
 
 export default brandingByConfig;

@@ -248,76 +248,20 @@
   };
 
   let setArtworkDetails = (artwork) => {
-    const sizeUnit = artwork.metadata.ft_space_size_unit ? "ft²" : "m²";
-
     artworkDetails = [
       {
-        label: "About this property",
+        label: `About this ${branding.nftItemName}`,
         value: artwork.description,
         fullWidthDisplay: true,
       },
       {
-        label: "Property address",
-        value: artwork.metadata.property_address,
+        label: "Test text field",
+        value: artwork.metadata.test_text,
         fullWidthDisplay: false,
       },
       {
-        label: "Floor space",
-        value: `${artwork.metadata.floor_space} ${sizeUnit}`,
-        fullWidthDisplay: false,
-      },
-      {
-        label: "Built in",
-        value: artwork.metadata.built_in,
-        fullWidthDisplay: false,
-      },
-      {
-        label: "Bedroom number",
-        value: artwork.metadata.bedroom_number,
-        fullWidthDisplay: false,
-      },
-      {
-        label: "Bathroom number",
-        value: artwork.metadata.bathroom_number,
-        fullWidthDisplay: false,
-      },
-      {
-        label: "Building type",
-        value: artwork.metadata.building_type,
-        fullWidthDisplay: false,
-      },
-      {
-        label: "Amenities nearby",
-        value: artwork.metadata.amenities_nearby,
-        fullWidthDisplay: false,
-      },
-      {
-        label: "Fire protection",
-        value: artwork.metadata.fire_protection,
-        fullWidthDisplay: false,
-      },
-      {
-        label: "Annual taxes",
-        value: `$${artwork.metadata.annual_taxes}`,
-        fullWidthDisplay: false,
-      },
-      {
-        label: "Monthly maintenance fee",
-        value: `$${artwork.metadata.maintenance_fee_monthly}`,
-        fullWidthDisplay: false,
-      },
-      {
-        label: "Appliances ",
-        value: artwork.metadata.appliances_number,
-        fullWidthDisplay: false,
-      },
-      // {
-      //   label: "Appliances included",
-      //   value: artwork.metadata.appliences_included ? "Yes" : "No",
-      //, fullWidthDisplay: false },
-      {
-        label: "Window coverings",
-        value: artwork.metadata.window_coverings ? "Yes" : "No",
+        label: "Test number field",
+        value: `$${artwork.metadata.test_number}`,
         fullWidthDisplay: false,
       },
     ];
@@ -518,7 +462,7 @@
         <div
           class="mob-desc description text-gray-600 whitespace-pre-wrap break-words"
         >
-          <h4 class="mt-10 font-bold">About this property</h4>
+          <h4 class="mt-10 font-bold">About this {branding.nftItemName}</h4>
           <div class="desc-text {showMore ? 'openDesc' : ''}">
             {@html linkify(artwork.description)}
           </div>

@@ -33,6 +33,7 @@
   import { requirePassword } from "$lib/auth";
   import { compareAsc, differenceInMilliseconds, parseISO } from "date-fns";
   import { browser } from "$app/env";
+  import branding from "$lib/branding";
 
   export let total;
   export let initialArtworks = [];
@@ -91,7 +92,7 @@
   <h2 class="md:mb-0">Market</h2>
   {#if $user && $user.is_artist}
     <a href="/a/create" class="primary-btn" data-cy="new-artwork"
-      >Submit a new property</a
+      >Submit a new {branding.nftItemName}</a
     >
   {/if}
 </div>

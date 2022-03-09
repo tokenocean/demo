@@ -2,10 +2,11 @@
   import { createEventDispatcher } from "svelte";
   import Fa from "svelte-fa";
   import { faCloudUploadAlt } from "@fortawesome/free-solid-svg-icons";
+  import branding from "$lib/branding";
 
   const dispatch = createEventDispatcher();
 
-  export let title = "Upload Your Property";
+  export let title = `Upload Your ${branding.nftItemName}`;
   export let style = "box";
 
   let fileInput;

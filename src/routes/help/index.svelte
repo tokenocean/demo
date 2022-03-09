@@ -34,8 +34,8 @@
         <h3>What is a digital deed?</h3>
 
         <p>
-          Owning a digital deed means minting and holding an NFT for a property.
-          You can then list your property for sale on the {branding.projectName}
+          Owning a digital deed means minting and holding an NFT for a {branding.nftItemName}.
+          You can then list your {branding.nftItemName} for sale on the {branding.projectName}
           marketplace and choose to sell it if you find a suitable buyer.
         </p>
 
@@ -51,18 +51,18 @@
         <h3>How are they created?</h3>
 
         <p>
-          When a property owner first uploads an image or video file for their
-          property, the file is added to the IPFS network and assigned a hash
+          When a {branding.nftItemName} owner first uploads an image or video file for their
+          {branding.nftItemName}, the file is added to the IPFS network and assigned a hash
           number that uniquely identifies the contents of the file. The owner's {branding.projectName}
           wallet will then generate a Liquid asset issuance transaction containing
-          the title of the property and its hash and broadcast it to be permanently
+          the title of the {branding.nftItemName} and its hash and broadcast it to be permanently
           recorded on the Liquid blockchain.
         </p>
 
-        <h3>Who can list their property here?</h3>
+        <h3>Who can list their {branding.nftItemName} here?</h3>
 
         <p>
-          Anyone can list a property on our platform. Your application will be
+          Anyone can list a {branding.nftItemName} on our platform. Your application will be
           reviewed by our team and we'll reach out to let you know if you’ve
           been accepted.
         </p>

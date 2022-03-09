@@ -7,6 +7,7 @@
   import { api, hasura, query } from "$lib/api";
   import { err, goto, info } from "$lib/utils";
   import { requireLogin } from "$lib/auth";
+  import branding from "$lib/branding";
 
   let users = [];
   let samples;
@@ -100,7 +101,7 @@
           <h4><span class="font-bold">Info: </span>{user.info}</h4>
         </div>
 
-        <h4><span class="font-bold">Property samples: </span></h4>
+        <h4><span class="font-bold">${branding.nftItemName} samples: </span></h4>
         <div class="text-center my-auto mr-2 flex">
           {#each user.samples as sample}
             <div class="w-40 mb-2 mr-2">

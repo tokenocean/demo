@@ -15,6 +15,6 @@ RUN pnpm install
 COPY . .
 
 RUN chmod +x create-config.sh
-RUN ./create-config.sh -c lPisyETZDe4KFXulqf0S
+RUN ./create-config.sh -c adLXnY0tVUN9pDsPmrDZ
 
 CMD ["pnpm", "start"]

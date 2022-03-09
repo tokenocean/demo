@@ -29,12 +29,12 @@
             <li>
               <p>
                 <a href="#upload-artwork-and-mint-nft"
-                  >CREATE PROPERTY & MINT NFT</a
+                  >CREATE {branding.nftItemName.toUpperCase()} & MINT NFT</a
                 >
               </p>
             </li>
             <li>
-              <p><a href="#list-artwork">LIST PROPERTY</a></p>
+              <p><a href="#list-artwork">LIST {branding.nftItemName.toUpperCase()}</a></p>
               <ol style="list-style: decimal; padding-left: 30px">
                 <li><a href="#simple-listing">Simple listing</a></li>
                 <li><a href="#auctions">Auctions</a></li>
@@ -43,7 +43,7 @@
             <li>
               <p>
                 <a href="#what-to-expect-after-listing"
-                  >WHAT TO EXPECT AFTER LISTING PROPERTY</a
+                  >WHAT TO EXPECT AFTER LISTING {branding.nftItemName.toUpperCase()}</a
                 >
               </p>
             </li>
@@ -184,7 +184,7 @@
               to mint an NFT (~0.000013 L-BTC or ~0.5 USD at the time of
               writing).
               {branding.projectName} users will also need L-BTC or other Liquid assets
-              (e.g. USDt Liquid) in their wallets to bid on property. Your wallet
+              (e.g. USDt Liquid) in their wallets to bid on {branding.nftItemName}. Your wallet
               can be funded through a Liquid, Bitcoin on-chain or Lightning transaction.
             </p>
             <p class="font-bold">
@@ -252,7 +252,7 @@
             </p>
             <p>
               To speed up your {branding.projectName} wallet funding process, avoid
-              funding delays and be able to bid on property with agility, we recommend
+              funding delays and be able to bid on {branding.nftItemName} with agility, we recommend
               obtaining L-BTC ahead of time. If you want to learn about different
               ways to get L-BTC please take a look at
               <a
@@ -303,17 +303,17 @@
             />
           </div>
           <div class="item" id="upload-artwork-and-mint-nft">
-            <h3>4. CREATE PROPERTY & MINT NFT</h3>
+            <h3>4. CREATE {branding.nftItemName.toUpperCase()} & MINT NFT</h3>
             <p>
               All new accounts in {branding.projectName} are “Fan” accounts. With
-              this type of account you can bid on property and trade NTFs in the
+              this type of account you can bid on {branding.nftItemName} and trade NTFs in the
               secondary market, but you can’t upload or mint NFTs. These options
               are reserved for users with an artist account. Artists will get their
               accounts tagged as “Artists” during the onboarding process.
             </p>
             <p>
-              To upload their property, artists can go to their profile page and
-              select “Submit a new property.” This option is also available in
+              To upload their {branding.nftItemName}, artists can go to their profile page and
+              select “Submit a new {branding.nftItemName}.” This option is also available in
               the “Market” page ({branding.urls.protocol}/market). Current
               supported file formats are jpg, png, gif and mp4 up to a size
               limit of 400MB.
@@ -329,10 +329,10 @@
               alt="guide-image"
             />
             <p>
-              You will be presented with a “Submit property” form. You can
-              either drag and drop your file or click on “Upload your property”
+              You will be presented with a “Submit {branding.nftItemName}” form. You can
+              either drag and drop your file or click on “Upload your {branding.nftItemName}”
               to select a file from your device. You will see a “Upload
-              complete!” message once your property is ready
+              complete!” message once your {branding.nftItemName} is ready
             </p>
             <img
               class="guide-image"
@@ -344,34 +344,34 @@
               src="/guide/image1.png"
               alt="guide-image"
             />
-            <p>You can now fill out details of your property including:</p>
+            <p>You can now fill out details of your {branding.nftItemName} including:</p>
             <ul style="list-style: disc; padding-left: 30px">
               <li>Title</li>
               <li>
-                This is a physical property (this just adds an icon to indicate
+                This is a physical {branding.nftItemName} (this just adds an icon to indicate
                 that the NFT is associated with a physical item like a physical
-                copy of the property)
+                copy of the {branding.nftItemName})
               </li>
               <li>Number of editions (1:1, multiple editions)</li>
               <li>
-                Description (here you can add a description of your property,
+                Description (here you can add a description of your {branding.nftItemName},
                 about yourself, or indicate that there is additional content
                 associated with the NFT such as a physical copy of the
-                underlying property, access to an event, etc.)
+                underlying {branding.nftItemName}, access to an event, etc.)
               </li>
               <li>
                 Ticker (this is a short 3-5 character identifier for your asset
                 that you will see in other Liquid wallets and explorers. The
                 ticker will be automatically selected based on the title of your
-                property, but it can also be customized)
+                {branding.nftItemName}, but it can also be customized)
               </li>
               <li>
                 Tags (you can use this field to add search words for your
-                property so other users can find it easily. This section will
-                also be used to include your property in a specific gallery
+                {branding.nftItemName} so other users can find it easily. This section will
+                also be used to include your {branding.nftItemName} in a specific gallery
                 (e.g., #Bitcoin2021; #Cypherpunks, etc.) Please only add the tag
                 to a specific gallery if you are authorized to do so. We will
-                remove any property that is not supposed to be displayed in the
+                remove any {branding.nftItemName} that is not supposed to be displayed in the
                 gallery. Consult with your gallery organizer to make sure you
                 include the appropriate tag
               </li>
@@ -382,11 +382,11 @@
               alt="guide-image"
             />
             <p>
-              After clicking “Submit” your property will be uploaded into our
+              After clicking “Submit” your {branding.nftItemName} will be uploaded into our
               IPFS node and a Liquid issuance transaction will be generated to
               mint the NFT. You will be redirected to the newly uploaded
-              property page and you will be able to see different details such
-              as the username of the artist that created the property, the
+              {branding.nftItemName} page and you will be able to see different details such
+              as the username of the artist that created the {branding.nftItemName}, the
               current owner (in this case the same artist), and under asset
               details you’ll be able to see the IPFS hash and the Liquid
               transaction ID.
@@ -394,7 +394,7 @@
             <p>
               You will have to wait 1-2 min for the NFT minting transaction to
               be confirmed in the Liquid blockchain (indicated as “pending'' by
-              the history of the property on the bottom left corner).
+              the history of the {branding.nftItemName} on the bottom left corner).
             </p>
             <img
               class="guide-image"
@@ -402,8 +402,8 @@
               alt="guide-image"
             />
             <p>
-              Once the minting transaction is confirmed, your property/NFT will
-              be ready to be listed. At this point your property is labelled as
+              Once the minting transaction is confirmed, your {branding.nftItemName}/NFT will
+              be ready to be listed. At this point your {branding.nftItemName} is labelled as
               “Unlisted” so no other {branding.projectName} user can see it in the
               platform. You can see it in your profile page but it won’t be publicly
               visible until listed.
@@ -431,14 +431,14 @@
             />
           </div>
           <div class="item" id="list-artwork">
-            <h3>5. LIST PROPERTY</h3>
+            <h3>5. LIST {branding.nftItemName.toUpperCase()}</h3>
             <p>
-              After uploading your property and minting NFT you can then proceed
+              After uploading your {branding.nftItemName} and minting NFT you can then proceed
               to list your piece for sale.
             </p>
             <p>
               1. Go to your {branding.projectName} profile page. There, you will
-              find all your uploaded property under the “Creations” tab.
+              find all your uploaded {branding.nftItemName} under the “Creations” tab.
             </p>
             <img
               class="guide-image"
@@ -452,7 +452,7 @@
             />
             <p>
               2. Select the unlisted piece that you want to publicly list by
-              clicking on it. You will be taken to the property page where you
+              clicking on it. You will be taken to the {branding.nftItemName} page where you
               will be able to list it by clicking on “List.”
             </p>
             <img
@@ -475,7 +475,7 @@
             <p>You have different options that include:</p>
             <p>
               1. Listing currency: you can define if you want to receive L-BTC,
-              L-CAD or USDt (Liquid). Users bidding for your property will have
+              L-CAD or USDt (Liquid). Users bidding for your {branding.nftItemName} will have
               to do it in this listing currency
             </p>
             <p>
@@ -487,7 +487,7 @@
               3. Royalty Rate: setting a royalty rate (in percentage) is
               optional. This is the percentage that will be paid to the original
               artist in subsequent sales of the NFT. Setting a royalty involves
-              transferring the property to a 2-of-2 multisig address with {branding.projectName}.
+              transferring the {branding.nftItemName} to a 2-of-2 multisig address with {branding.projectName}.
               Our servers will only co-sign a transfer if they pay the specified
               royalty to the original artist. This percentage can not be
               modified afterwards by any NFT owner. Once an NFT has a royalty
@@ -500,8 +500,8 @@
             <p>
               Once you are happy with your listing conditions you can hit
               “Submit” and your piece will be published for sale. You will be
-              redirected to the property page and will be able to see the
-              listing details and the history of the property if you scroll
+              redirected to the {branding.nftItemName} page and will be able to see the
+              listing details and the history of the {branding.nftItemName} if you scroll
               down.
             </p>
             <img
@@ -521,7 +521,7 @@
             />
             <p>
               Other users will now be able to make you an offer or directly buy
-              your property if a price was set.
+              your {branding.nftItemName} if a price was set.
             </p>
             <img
               class="guide-image"
@@ -536,7 +536,7 @@
               activate this option. You have the same options as in simple
               listing, but in this case, you can also add a start and end date
               and time for your auction and a reserve price. The reserve price
-              is the minimum price you’ll accept for the property. Setting one
+              is the minimum price you’ll accept for the {branding.nftItemName}. Setting one
               is optional.
             </p>
             <img
@@ -546,14 +546,14 @@
             />
 
             <p>
-              To ensure auction start and end dates and time, once an property
+              To ensure auction start and end dates and time, once an {branding.nftItemName}
               is listed using this option it is transferred to a 2-of-2 multisig
               address. The {branding.projectName} server will co-sign this transaction
               once the auction is finished and the NFT will be sent to the highest
               bidder and the money to the artist.
             </p>
             <p>
-              After listing your property using the auction option, other users
+              After listing your {branding.nftItemName} using the auction option, other users
               will bid on it and see information such as reserve price, if any,
               and how much time is left until the auction ends.
             </p>
@@ -566,22 +566,22 @@
           <div class="item" id="what-to-expect-after-listing">
             <h3>6. WHAT TO EXPECT AFTER LISTING</h3>
             <p>
-              After listing your property, {branding.projectName} users will be able
+              After listing your {branding.nftItemName}, {branding.projectName} users will be able
               to bid in different ways depending on your listing conditions. If you
-              set a price, users will be able to buy out your property immediately
+              set a price, users will be able to buy out your {branding.nftItemName} immediately
               for that price. Users can also make an offer and you’ll see these offers
-              in the property page and in your profile page under “Offers.” If you
+              in the {branding.nftItemName} page and in your profile page under “Offers.” If you
               did a simple listing (i.e., not auction) after someone places a bid
-              on your property, you can accept that offer, wait for further offers
+              on your {branding.nftItemName}, you can accept that offer, wait for further offers
               or wait until someone pays the buyout price for your piece.
             </p>
             <p>
               If you decide to accept an offer, your wallet will sign the atomic
               swap transaction that will transfer the NFT to the bidder and will
               deposit the bid money into your {branding.projectName} wallet. Your
-              property will still be visible to you in your profile page under “Creations”
+              {branding.nftItemName} will still be visible to you in your profile page under “Creations”
               but since you no longer are the owner, it won’t show up under the “Collection”
-              tab. The property page will also show the history of the NFT and it
+              tab. The {branding.nftItemName} page will also show the history of the NFT and it
               will reflect the new owner.
             </p>
             <img
@@ -600,7 +600,7 @@
               alt="guide-image"
             />
             <p>
-              If you decide to list your property as an auction, {branding.projectName}
+              If you decide to list your {branding.nftItemName} as an auction, {branding.projectName}
               users will see the time left until the auction goes live, and they
               will be able to bid for your piece until the end of the auction. If
               you set a reserve price (i.e., minimum amount that you will accept
