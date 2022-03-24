@@ -32,6 +32,7 @@ const downloadAsPromise = (url, localDestination) => {
 
 const run = async () => {
   await downloadAsPromise(config.assets.logo, "./static/logo.png");
+  await downloadAsPromise(config.assets.footer_logo, "./static/footer_logo.png");
   await downloadAsPromise(config.assets.favicon, "./static/favicon.ico");
   await downloadAsPromise(config.assets.splash_image, "./static/splash.png");
 };
